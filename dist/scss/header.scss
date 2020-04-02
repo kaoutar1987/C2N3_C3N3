@@ -1,3 +1,57 @@
+
+@import"main.scss";
+
+
 header{
-    background-color: darkcyan;
+    nav{
+        height: 90px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 8px;
+        background-image: url('../Design/Assets/png/Merged\ bar-1.png');
+        .logo,.menu{
+            display: inline-block;
+        }
+       .menu{
+           a:link{
+               text-decoration: none;
+           }
+           &__item{
+               
+               margin: 5px 15px; // margin:auto a essayé
+               font-size: large;
+               font-weight: 700;
+               justify-items: center; 
+               &--btn{
+                   width: 100px;
+                   height: 40px;
+                   margin-top: 25px;
+                   border: 2px solid $color2;
+                   border-radius: 10px;
+                   background-color: transparent;
+                  
+                  
+               }
+               
+           }
+       }
+        
+    }
+    .nouvelle{
+        height: 120px;
+        text-align: center;
+        background-color: $bgcolor2;
+        h3{
+            font-size: large;
+            color: $color1;
+        }
+        p{
+            font-size: medium;
+            font-weight: 700;
+            color: $color3;
+        }
+    
+    }
 }
