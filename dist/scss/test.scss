@@ -1,0 +1,28 @@
+.test{
+    background-color: $bgcolor3;
+    text-align: center;
+    color: $color3;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 5%;
+        margin:5px auto;
+
+    }
+    button{
+        width: 20%;
+        height: 40px;
+        margin: 5px auto;
+        border:1px  solid $color2;
+        border-radius: 5px;
+        background-color: $color2;
+        font-size: small;
+        font-weight: 700;
+        color: $bgcolor1;
+
+
+    }
+
+
+}
