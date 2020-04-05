@@ -1,0 +1,22 @@
+.hero{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: transparent;
+    .photo{
+        width: 60%;
+    }
+    .test{
+        font-size:larger;
+        font-weight:500;
+        width: 40%;
+        background-color: transparent;
+        p{
+            color: $color6;
+      
+        }
+        button{
+            width: 70%;
+        }
+    }
+}

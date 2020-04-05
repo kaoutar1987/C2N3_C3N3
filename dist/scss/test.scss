@@ -2,7 +2,8 @@
     background-color: $bgcolor3;
     text-align: center;
     color: $color3;
-    font-size: medium;
+    font-size: large;
+   
     display: flex;
     flex-direction: column;
     img{
@@ -11,13 +12,13 @@
 
     }
     button{
-        width: 20%;
-        height: 40px;
-        margin: 5px auto;
+        width: 40%;
+        height:50px;
+        margin: 10px auto;
         border:1px  solid $color2;
         border-radius: 5px;
         background-color: $color2;
-        font-size: small;
+        font-size: large;
         font-weight: 700;
         color: $bgcolor1;
 
