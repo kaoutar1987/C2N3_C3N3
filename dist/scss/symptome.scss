@@ -8,16 +8,24 @@
         margin: auto;
         .groupe{
             display: inline-block;
-            width: 30%;
+            width: 20%;
             margin: auto;
-
             &__item{
                 height: 100%;
                 p{
-                    font-size:medium;
-                    font-weight: 700;
+                    font-size:large;
+                    font-weight: 600;
+                }
+                }
+                .gêne{
+                    position: relative;
+                    left: -20px;
+                }
+                .toux{
+                    position: relative;
+                    left: -20px;
+                    
                 }
             }       
         }
     }
-}

@@ -3,28 +3,26 @@ header{
     background-color: $bgcolor1;
     position: sticky;
     top: 0;
+    z-index: 2;
     nav{
-        
         height: 90px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 5px 8px;
         background-image: url('../Design/Assets/png/Merged\ bar-1.png');
-        
-
         .logo,.menu{
-            display: inline-block;
-            
+            display: inline-block;    
         }
        .menu{
+        &--active{
+            color: $color1;
+        }       
            a:link{
-               text-decoration: none;
-              
-               
+               text-decoration: none;    
            }
            &__item{
-               
+
                margin: 5px 15px; 
                font-size: large;
                font-weight: 700;
@@ -35,9 +33,7 @@ header{
                    margin-top: 25px;
                    border: 2px solid $color2;
                    border-radius: 10px;
-                   background-color: transparent;
-                  
-                  
+                   background-color: transparent;   
                }
                
            }

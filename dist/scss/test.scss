@@ -2,23 +2,24 @@
     background-color: $bgcolor3;
     text-align: center;
     color: $color3;
-    font-size: large;
+    font-size: x-large;
+    font-weight: 600;
    
     display: flex;
     flex-direction: column;
     img{
-        width: 5%;
-        margin:5px auto;
+        width: 8%;
+        margin:10px auto;
 
     }
     button{
-        width: 40%;
-        height:50px;
+        width: 450px;
+        height:40px;
         margin: 10px auto;
         border:1px  solid $color2;
         border-radius: 5px;
         background-color: $color2;
-        font-size: large;
+        font-size: larger;
         font-weight: 700;
         color: $bgcolor1;
 
