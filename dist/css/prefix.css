@@ -207,7 +207,7 @@ header {
     .transmission .container__item .gout {
       position: absolute;
       top: 65px;
-      left: 90px; }
+      left: 95px; }
     .transmission .container__item p {
       font-size: medium;
       font-weight: 700;
@@ -304,6 +304,8 @@ footer .about {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+      footer .about .details .menu--active {
+        color: #000000; }
       footer .about .details .menu__item {
         font-size: large;
         font-weight: 700;
@@ -337,5 +339,105 @@ footer .about {
 footer .bar {
   background-color: #1078AD;
   border-radius: 5px; }
+
+.préambule .text {
+  padding: 40px;
+  background-color: #96C5DC;
+  margin: 50px auto;
+  width: 80%;
+  color: #000000;
+  text-align: center;
+  border-radius: 10px; }
+  .préambule .text h3 {
+    color: #1078AD;
+    font-size: large;
+    font-weight: 700; }
+  .préambule .text P {
+    font-size: small;
+    font-weight: bold; }
+  .préambule .text hr {
+    border: 1px solid #F4CF1B;
+    width: 40%;
+    margin: 10px auto; }
+
+.préambule .test {
+  background-color: transparent; }
+
+.box .Anti-inflammatoires {
+  padding: 40px;
+  background-color: #F4CF1B;
+  margin: 50px auto;
+  width: 80%;
+  color: #000000;
+  text-align: center;
+  border-radius: 10px; }
+  .box .Anti-inflammatoires h3 {
+    color: #1078AD;
+    font-size: large;
+    font-weight: 700; }
+  .box .Anti-inflammatoires P {
+    font-size: small;
+    font-weight: bold; }
+
+.box .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 30px; }
+  .box .button .btn {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #1A519E;
+    border-radius: 5px;
+    background-color: #1A519E;
+    font-size: small;
+    font-weight: 700;
+    color: #D0E5F0; }
+
+.stepper {
+  width: 80%;
+  margin: 30px auto 50px; }
+  .stepper .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .stepper .list__item {
+      list-style-type: none;
+      color: #1A519E;
+      font-size: large;
+      font-weight: 700;
+      text-align: center;
+      width: 33.33%;
+      position: relative;
+      margin: auto; }
+      .stepper .list__item:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        background-color: #1A519E;
+        z-index: -1;
+        display: block;
+        margin: 0 auto 10px; }
+      .stepper .list__item--active::before {
+        background-color: #F4CF1B; }
+      .stepper .list__item--active::after {
+        position: absolute;
+        top: -10px;
+        left: 147px;
+        content: "";
+        width: 40px;
+        height: 40px;
+        border: 1px solid transparent;
+        border-radius: 40px;
+        background-color: #96C5DC;
+        z-index: -1; }
 
 /*# sourceMappingURL=prefix.css.map */

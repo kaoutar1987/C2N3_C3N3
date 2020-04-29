@@ -1,0 +1,85 @@
+.préambule{
+    .text{
+       padding: 40px;
+       background-color: $bgcolor3;
+       margin: 50px auto;
+       width: 80%;
+       color: $color1;
+       text-align: center;
+       border-radius: 10px;
+       h3{
+        color: $color3;
+        font-size: large;
+        font-weight: 700;
+
+       }
+       P{
+        font-size:small;
+        font-weight:bold;
+       }
+     
+     hr{
+        border: 1px solid $bgcolor2;
+        width: 40%;
+        margin: 10px auto;
+     }
+    }
+    .test{
+        background-color: transparent;
+    }
+ 
+  
+}
+
+    
+
+.box{
+   .Anti-inflammatoires{
+     padding: 40px;
+     background-color: $bgcolor2;
+     margin: 50px auto;
+     width: 80%;
+     color: $color1;
+     text-align: center;
+     border-radius: 10px;
+     h3{
+        color: $color3;
+        font-size: large;
+        font-weight: 700;
+    }
+     P{
+        font-size:small;
+        font-weight:bold;
+    
+    }  
+
+}
+   .button{
+       display: flex;
+       justify-content: space-around;
+       margin-bottom: 30px;
+       
+      .btn{
+        width: 150px;
+        height:40px;
+        border:1px  solid $color2;
+        border-radius: 5px;
+        background-color: $color2;
+        font-size: small;
+        font-weight: 700;
+        color: $bgcolor1;
+
+
+          
+
+        
+
+      }
+   
+   
+   }
+
+}
+
+
+    

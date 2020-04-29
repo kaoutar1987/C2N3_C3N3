@@ -1,0 +1,52 @@
+
+
+.stepper {
+    width: 80%;
+    margin: 30px auto 50px;
+    .list {
+        display: flex;
+        flex-direction: row;
+        &__item {
+            list-style-type: none;
+            color:$color2 ;
+            font-size:large ;
+            font-weight:700;
+            text-align: center;
+            width: 33.33%;
+            position: relative;
+            margin: auto;
+            &:before {
+            
+                content:"";
+                width:20px;
+                height:20px;
+                border:1px solid transparent;
+                border-radius:20px;
+                background-color: $color2;
+                z-index: -1;
+
+                display: block;
+                margin: 0 auto 10px; 
+            }
+            &--active{
+                &::before{
+                    background-color:$bgcolor2;
+                }
+                &::after{
+                     position :absolute;
+                     top:-10px ;
+                     left:147px ;
+                
+                    content:"";
+                    width:40px;
+                    height:40px;
+                    border:1px solid transparent;
+                    border-radius:40px;
+                    background-color: $bgcolor3;
+                    z-index: -1;
+
+                }
+            }
+        }
+    }
+}
