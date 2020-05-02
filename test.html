@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
 
 
-    <title>>Demarer le test</title>
+    <title>Demarer le test</title>
 </head>
 <body>
     <header>
@@ -26,15 +26,15 @@
     </header>
     
 <!------------------------------------------------------------------Préambule------------------------------------------------------------------>
-<div class="stepper"> 
-    <ul class="list">
+<div class="stepper" id="stepper"> 
+    <ul class="list"  id="list">
         <li class="list__item list__item--active" >Information</li>
         <li class="list__item" >Questionnaire</li>
         <li class="list__item" >Résultats</li>
     </ul>
 </div>
 
-        <div class="préambule">
+        <div class="préambule" id="préambule">
         <div class="text">
             <h3>Préambule</h3>
             <p>
@@ -59,7 +59,7 @@
 
         
             <div class="test">
-                <button type="button">Demarer le test</button>
+                <button type="button" id ="ts1" >Demarer le test</button>
             </div>
            
             
@@ -67,17 +67,16 @@
 <!--------------------------------------------------------------------------------------------------------------------------------->
 
 <!---------------------------------------------------quitions--------------------------------------------------------------------------------------------->    
- <div class="box">
-     <div class="progretion">
-
-     </div>
-     <div class="Questionnaire">
-
-     </div>
-     <div class="réponce">
-
-     </div>
-     <div class="Anti-inflammatoires">
+ <div class="box" id="box">
+    <div class="progressbar-box" >
+        <div class="conteur" id ='count'>count</div>
+        <div class="progressbar" ><div class="progress" id="pro"></div></div>   
+        
+    </div>
+     <div class="questionnaire" id="questionnaire"></div>
+     <div class="réponce" id="réponce"></div>
+     
+     <div class="Anti-inflammatoires" id="Anti-inflammatoires">
          <h3>Anti-inflammatoires non stéroïdiens</h3>
          <p>
             La prise d'anti-inflammatoires (ibuprofène, cortisone ...)
@@ -88,25 +87,26 @@
 
      </div>
      <div class="button">
-        <button class="btn">précédant </button>
-        <button class="btn">suivant</button>
-
+        <button class="btn" id="pré">précédant </button>
+        <button class="btn" id="sui">suivant</button>
      </div>
 </div>
-
-<div class="ruseltas">
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------>
+<div class="ruseltas" id="resultat">
+    <div class="h3">
+    <h3>Votre état ne semble 
+        pas préoccupant.</h3>
+    </div>
     <div class="rusel">
+        <h2>Restez chez vous. </h2>
 
-      <h2>Votre état ne semble 
-        pas préoccupant.</h2>
-      <h3>Restez chez vous. </h3>
-   
-       <p>#RestezChezVous - limitez les contacts avec d'autres personnes.
+        <p>#RestezChezVous - limitez les contacts avec d'autres personnes.
            Le virus peut être propagé par des porteurs ne montrant pas de symptômes.</p>
     
     </div>
     <div class="répandre">
-        <button type="button"></button>
+        <button class="repon" id="répan">reprendre le test</button>
     </div>
    
     
@@ -176,6 +176,6 @@
     </footer>
 
 
-    
+ <script src="script.js"></script>   
 </body>
 </html>

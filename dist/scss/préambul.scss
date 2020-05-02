@@ -1,4 +1,5 @@
 .préambule{
+    display: block;
     .text{
        padding: 40px;
        background-color: $bgcolor3;
@@ -33,7 +34,48 @@
 
     
 
-.box{
+.box{ 
+    text-align: center;
+    display: none;
+    color: $color3;
+    font-size: small;
+    
+
+    .progressbar-box{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        margin: 0 auto;
+        .conteur{
+            width: 10%;
+            margin: 0 auto ;
+            
+        }
+        .progressbar{
+            width: 90%;
+            height: 20px;
+            border: 1px solid  $color3; 
+            background-color: $bgcolor4;
+            margin:  auto;
+            border-radius: 13px;
+            
+            .progress{
+                font-size: large;
+                font-weight: 700;
+                height: 18px;
+                background-color: $color3;
+                border-radius: 13px;
+                
+                
+                
+    
+            }
+
+
+    }
+    
+
+    }
    .Anti-inflammatoires{
      padding: 40px;
      background-color: $bgcolor2;
@@ -55,6 +97,7 @@
 
 }
    .button{
+      
        display: flex;
        justify-content: space-around;
        margin-bottom: 30px;
@@ -70,16 +113,64 @@
         color: $bgcolor1;
 
 
-          
-
-        
-
       }
    
    
    }
 
 }
+.ruseltas{
+    display: none;
+    .h3{
+        text-align: center;
+        color:$color5;
+        font-size: large;
+        font-weight:600 ;
+    }
+    .rusel{
+        padding: 40px;
+       background-color: $bgcolor3;
+       margin: 50px auto;
+       width: 80%;
+       color: $color1;
+       text-align: center;
+       border-radius: 10px;
+       h3{
+        color: $color3;
+        font-size: large;
+        font-weight: 700;
+
+     }    
+        P{
+        font-size:small;
+        font-weight:bold;
+    }
+
+  }
+  .répandre{
+      margin-bottom: 30px;
+      margin-left: 600px;
+      
+      
+      .repon{
+        width: 150px;
+        height:40px;
+        border:1px  solid $color2;
+        border-radius: 5px;
+        background-color: $color2;
+        font-size: small;
+        font-weight: 700;
+        color: $bgcolor1;
+        
+        
+
+      }
+  }
 
 
+    
+}
+ #pré{
+    display: none;
+}
     

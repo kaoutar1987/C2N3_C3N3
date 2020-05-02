@@ -275,58 +275,99 @@ footer .bar {
   background-color: #1078AD;
   border-radius: 5px; }
 
-.préambule .text {
-  padding: 40px;
-  background-color: #96C5DC;
-  margin: 50px auto;
-  width: 80%;
-  color: #000000;
+.préambule {
+  display: block; }
+  .préambule .text {
+    padding: 40px;
+    background-color: #96C5DC;
+    margin: 50px auto;
+    width: 80%;
+    color: #000000;
+    text-align: center;
+    border-radius: 10px; }
+    .préambule .text h3 {
+      color: #1078AD;
+      font-size: large;
+      font-weight: 700; }
+    .préambule .text P {
+      font-size: small;
+      font-weight: bold; }
+    .préambule .text hr {
+      border: 1px solid #F4CF1B;
+      width: 40%;
+      margin: 10px auto; }
+  .préambule .test {
+    background-color: transparent; }
+
+.box {
   text-align: center;
-  border-radius: 10px; }
-  .préambule .text h3 {
-    color: #1078AD;
+  display: none; }
+  .box .Anti-inflammatoires {
+    padding: 40px;
+    background-color: #F4CF1B;
+    margin: 50px auto;
+    width: 80%;
+    color: #000000;
+    text-align: center;
+    border-radius: 10px; }
+    .box .Anti-inflammatoires h3 {
+      color: #1078AD;
+      font-size: large;
+      font-weight: 700; }
+    .box .Anti-inflammatoires P {
+      font-size: small;
+      font-weight: bold; }
+  .box .button {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px; }
+    .box .button .btn {
+      width: 150px;
+      height: 40px;
+      border: 1px solid #1A519E;
+      border-radius: 5px;
+      background-color: #1A519E;
+      font-size: small;
+      font-weight: 700;
+      color: #D0E5F0; }
+
+.ruseltas {
+  display: none; }
+  .ruseltas .h3 {
+    text-align: center;
+    color: #369D53;
     font-size: large;
-    font-weight: 700; }
-  .préambule .text P {
-    font-size: small;
-    font-weight: bold; }
-  .préambule .text hr {
-    border: 1px solid #F4CF1B;
-    width: 40%;
-    margin: 10px auto; }
+    font-weight: 600; }
+  .ruseltas .rusel {
+    padding: 40px;
+    background-color: #96C5DC;
+    margin: 50px auto;
+    width: 80%;
+    color: #000000;
+    text-align: center;
+    border-radius: 10px; }
+    .ruseltas .rusel h3 {
+      color: #1078AD;
+      font-size: large;
+      font-weight: 700; }
+    .ruseltas .rusel P {
+      font-size: small;
+      font-weight: bold; }
+  .ruseltas .répandre {
+    margin-bottom: 30px;
+    margin-left: 600px; }
+    .ruseltas .répandre .repon {
+      width: 150px;
+      height: 40px;
+      border: 1px solid #1A519E;
+      border-radius: 5px;
+      background-color: #1A519E;
+      font-size: small;
+      font-weight: 700;
+      color: #D0E5F0; }
 
-.préambule .test {
-  background-color: transparent; }
-
-.box .Anti-inflammatoires {
-  padding: 40px;
-  background-color: #F4CF1B;
-  margin: 50px auto;
-  width: 80%;
-  color: #000000;
-  text-align: center;
-  border-radius: 10px; }
-  .box .Anti-inflammatoires h3 {
-    color: #1078AD;
-    font-size: large;
-    font-weight: 700; }
-  .box .Anti-inflammatoires P {
-    font-size: small;
-    font-weight: bold; }
-
-.box .button {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 30px; }
-  .box .button .btn {
-    width: 150px;
-    height: 40px;
-    border: 1px solid #1A519E;
-    border-radius: 5px;
-    background-color: #1A519E;
-    font-size: small;
-    font-weight: 700;
-    color: #D0E5F0; }
+#pré {
+  display: none; }
 
 .stepper {
   width: 80%;
