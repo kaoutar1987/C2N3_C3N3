@@ -314,17 +314,17 @@ footer .bar {
       margin: 0 auto; }
     .box .progressbar-box .progressbar {
       width: 90%;
-      height: 20px;
+      height: 10px;
       border: 1px solid #1078AD;
       background-color: #E6F1F7;
       margin: auto;
-      border-radius: 13px; }
+      border-radius: 10px; }
       .box .progressbar-box .progressbar .progress {
         font-size: large;
         font-weight: 700;
-        height: 18px;
+        height: 8px;
         background-color: #1078AD;
-        border-radius: 13px; }
+        border-radius: 10px; }
   .box .Anti-inflammatoires {
     padding: 40px;
     background-color: #F4CF1B;

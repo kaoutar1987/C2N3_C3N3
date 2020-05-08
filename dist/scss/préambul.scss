@@ -16,14 +16,18 @@
        }
        P{
         font-size:small;
-        font-weight:bold;
+        font-weight:bold
+
        }
-     
-     hr{
+
+       hr{
         border: 1px solid $bgcolor2;
         width: 40%;
         margin: 10px auto;
      }
+
+     
+     
     }
     .test{
         background-color: transparent;
@@ -39,12 +43,11 @@
     display: none;
     color: $color3;
     font-size: small;
-    
 
     .progressbar-box{
         display: flex;
         flex-direction: row;
-        width: 50%;
+        width:50%;
         margin: 0 auto;
         .conteur{
             width: 10%;
@@ -53,23 +56,22 @@
         }
         .progressbar{
             width: 90%;
-            height: 20px;
+            height: 10px;
             border: 1px solid  $color3; 
             background-color: $bgcolor4;
             margin:  auto;
-            border-radius: 13px;
+            border-radius: 10px;
             
             .progress{
                 font-size: large;
                 font-weight: 700;
-                height: 18px;
+                height: 8px;
                 background-color: $color3;
-                border-radius: 13px;
+                border-radius: 10px;
                 
                 
-                
-    
             }
+
 
 
     }
@@ -129,29 +131,30 @@
     }
     .rusel{
         padding: 40px;
-       background-color: $bgcolor3;
-       margin: 50px auto;
-       width: 80%;
-       color: $color1;
-       text-align: center;
-       border-radius: 10px;
-       h3{
-        color: $color3;
-        font-size: large;
-        font-weight: 700;
+        background-color: $bgcolor3;
+        margin: 50px auto;
+        width: 80%;
+        color: $color1;
+        text-align: center;
+        border-radius: 10px;
 
-     }    
+        h3{
+            color: $color3;
+            font-size: large;
+            font-weight: 700;     
+        }
+
         P{
-        font-size:small;
-        font-weight:bold;
+            font-size:small;
+            font-weight:bold;
+
+        
     }
 
-  }
+}
   .répandre{
       margin-bottom: 30px;
       margin-left: 600px;
-      
-      
       .repon{
         width: 150px;
         height:40px;
@@ -161,16 +164,12 @@
         font-size: small;
         font-weight: 700;
         color: $bgcolor1;
-        
-        
+
 
       }
-  }
-
-
-    
+  }    
 }
- #pré{
+#pré{
     display: none;
 }
     

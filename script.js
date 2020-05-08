@@ -5,13 +5,15 @@ const quiz = [
         <input type="radio" value="oui" id="oui" name="choice"><br>
         <label for="non">Non</label>
         <input type="radio" id="non" value="non" name="choice"><br>`,
-		number: 1,
+        number: 1,
+        
     },
     {
 		question: 'Ces dernières 48 heures, quelle a été votre température la plus élevée ?',
 		choices: `<label for="numerique">degrée</label>
-        <input type="number" id="numerique">`,
-		number: 2,
+        <input  id="numerique" type="number" name="temperature" >`,
+        number: 2,
+        
 	
     },
     {
@@ -84,21 +86,22 @@ const quiz = [
         <input type="radio" value="oui" id="oui" name="choice"><br>
         <label for="non">Non</label>
         <input type="radio" id="non" value="non" name="choice"><br>`,
-		number: 10,
+        number: 10,
+        
 		
 	},
 	{
 		question: `Quel est votre âge ? 
         Ceci, afin de calculer un facteur de risque spécifique.`,
 		choices: `<label for="numerique">ans</label>
-        <input type="text" id="numerique" name="choice">`,
+        <input type="number" id="numerique" name="age" >`,
 		number: 11,
 	},
 	{
 		question: `Quel est votre taille ? 
         Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.`,
 		choices: `<label for="numerique">cm</label>
-        <input type="text" id="numerique" name="choice">`,
+        <input type="number" id="numerique" name="taille" >`,
 		number: 12,
 		
 	},
@@ -106,7 +109,7 @@ const quiz = [
 		question: `Quel est votre poids ?
         Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.`,
 		choices: `<label for="numerique">kg</label>
-        <input type="text" id="numerique" name="choice">`,
+        <input type="number" id="numerique" name="poids" >`,
 		number: 13,
 	
 	},
@@ -216,25 +219,29 @@ const questionDiv = document.getElementById("questionnaire");
 const anti=document.getElementById('Anti-inflammatoires')
 const réponce = document.getElementById("réponce");
 const ruseltas = document.getElementById("ruseltas");
-const pré = document.getElementById("pré");
-const sui = document.getElementById("sui");
+const précédant = document.getElementById("pré");
+const suivant = document.getElementById("sui");
 const répan = document.getElementById("répan");
-const ts1 = document.getElementById("ts1");
+const Demarer = document.getElementById("ts1");
 const list = document.getElementsByClassName("list__item");
 const count = document.getElementById("count");
 
+
+
+
+
 // passer a l 'etape suivant
+ //progretion.firstElementChild.style.width =`${100/22*progres}%`;
+    //progretion.firstElementChild.style.backgroundColor='#1078AD';
+    
 function bar(progres){
     progretion.style.width =`${(100/22)*(progres+1)}%`;
     progretion.style.backgroundColor='#1078AD';
     count.textContent= (cont +1) + '/' + quiz.length;
-
-    //progretion.firstElementChild.style.width =`${100/22*progres}%`;
-    //progretion.firstElementChild.style.backgroundColor='#1078AD';
-    
+   
 }
 
-ts1.addEventListener('click', nextStep);
+Demarer.addEventListener('click', nextStep);
  
 function nextStep(){
     préambule.style.display='none';
@@ -246,41 +253,87 @@ function nextStep(){
    
 }
 
-
 // afficher la question
 function showQuestion (questionIndex){
     let ques = quiz[questionIndex];
-    questionDiv.textContent= ques.question;
+    questionDiv.textContent = ques.question;
     réponce.innerHTML=ques.choices;
     
+    
 }
-let cont = 0
-//afficher la question suivant
 
-sui.addEventListener('click',nextQuestion);
+var cont = 0;
+var newArray = [];
+
+suivant.addEventListener('click',nextQuestion);//afficher la question suivant
 
 function nextQuestion(){
+
     
-    cont += 1
-    showQuestion (cont)
-    console.log(cont);
+    
+   //récuperation du valure
+  
+  const récup = document.getElementById("numerique");
+  
+   if(réponce.children[1].id === "numerique"){
+
+    
+        if(!récup.value){
+           alert("enter une valeur");
+           return;
+
+       }else if (cont === 1 && (récup.value<34 || récup.value>42)){
+            alert("la temperature doit etre entre 34 et 42");
+            return;
+
+       }else if (cont === 10 && (récup.value<15 || récup.value>110)){
+           alert("l'age doit etre entre 15 et 110");
+           return;
+
+       }else if (cont === 11 && (récup.value<80 || récup.value>250)){
+           alert("le taille doit etre entre 80 et 250");
+           return;
+
+       }else if (cont === 12 && (récup.value<20 || récup.value>250)){
+           alert("le poids doit etre entre 20 et 250");
+            return;
+
+       }else{
+           newArray.push(récup.value);
+           console.log(newArray); }
+      
+    }else{
+        let select = document.querySelector('input[name=choice]:checked');
+        if(!select){
+            alert('svp choisir une reponse');
+            return;
+        }else {
+            newArray.push(select);
+            console.log(newArray);
+
+        }
+    }
+        
+    cont +=1;   
     if(cont > 0){
         pré.style.display="block"
    }
-   if(cont >=1){
+
+   if(cont >0){
        anti.style.display="none"
    }
-   bar(cont)
-      
-}
+    showQuestion(cont);
+    bar(cont)  ;
+   
+}showQuestion(cont);
 
-//afficher la question précedent
-pré.addEventListener('click',lastQuestion);
+
+précédant.addEventListener('click',lastQuestion);//afficher la question précedent
 function lastQuestion(){
     cont -= 1
     showQuestion (cont)
     console.log(cont);
-    if(cont <= 0){
+    if(cont = 0){
        pré.style.display="none"
     }
     if(cont <1){
@@ -288,6 +341,5 @@ function lastQuestion(){
     }
 
     bar(cont)
-
 }
 
