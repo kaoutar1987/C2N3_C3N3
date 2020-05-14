@@ -27,22 +27,33 @@
      }
 
      
-     
     }
     .test{
         background-color: transparent;
-    }
- 
-  
+    }  
 }
-
-    
 
 .box{ 
     text-align: center;
     display: none;
     color: $color3;
     font-size: small;
+    .fourchoices {
+        display: flex;
+        justify-content: center;
+    
+        .choices {
+            display: flex;
+            width: 250px;
+             justify-content: center;
+            align-items: center;
+    
+            input {
+                margin: 5%;
+            }
+        }
+    
+    }
 
     .progressbar-box{
         display: flex;
@@ -77,8 +88,9 @@
     }
     
 
-    }
-   .Anti-inflammatoires{
+}
+
+.Anti-inflammatoires{
      padding: 40px;
      background-color: $bgcolor2;
      margin: 50px auto;
@@ -98,7 +110,7 @@
     }  
 
 }
-   .button{
+.button{
       
        display: flex;
        justify-content: space-around;
@@ -121,8 +133,9 @@
    }
 
 }
-.ruseltas{
+#resultas{
     display: none;
+    
     .h3{
         text-align: center;
         color:$color5;
@@ -138,7 +151,7 @@
         text-align: center;
         border-radius: 10px;
 
-        h3{
+        h2{
             color: $color3;
             font-size: large;
             font-weight: 700;     
@@ -156,6 +169,7 @@
       margin-bottom: 30px;
       margin-left: 600px;
       .repon{
+          margin: auto;
         width: 150px;
         height:40px;
         border:1px  solid $color2;
@@ -164,6 +178,7 @@
         font-size: small;
         font-weight: 700;
         color: $bgcolor1;
+    
 
 
       }

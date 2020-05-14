@@ -304,6 +304,16 @@ footer .bar {
   display: none;
   color: #1078AD;
   font-size: small; }
+  .box .fourchoices {
+    display: flex;
+    justify-content: center; }
+    .box .fourchoices .choices {
+      display: flex;
+      width: 250px;
+      justify-content: center;
+      align-items: center; }
+      .box .fourchoices .choices input {
+        margin: 5%; }
   .box .progressbar-box {
     display: flex;
     flex-direction: row;
@@ -354,14 +364,14 @@ footer .bar {
       font-weight: 700;
       color: #D0E5F0; }
 
-.ruseltas {
+#resultas {
   display: none; }
-  .ruseltas .h3 {
+  #resultas .h3 {
     text-align: center;
     color: #369D53;
     font-size: large;
     font-weight: 600; }
-  .ruseltas .rusel {
+  #resultas .rusel {
     padding: 40px;
     background-color: #96C5DC;
     margin: 50px auto;
@@ -369,17 +379,18 @@ footer .bar {
     color: #000000;
     text-align: center;
     border-radius: 10px; }
-    .ruseltas .rusel h3 {
+    #resultas .rusel h2 {
       color: #1078AD;
       font-size: large;
       font-weight: 700; }
-    .ruseltas .rusel P {
+    #resultas .rusel P {
       font-size: small;
       font-weight: bold; }
-  .ruseltas .répandre {
+  #resultas .répandre {
     margin-bottom: 30px;
     margin-left: 600px; }
-    .ruseltas .répandre .repon {
+    #resultas .répandre .repon {
+      margin: auto;
       width: 150px;
       height: 40px;
       border: 1px solid #1A519E;
